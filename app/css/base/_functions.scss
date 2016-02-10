@@ -1,0 +1,3 @@
+@function rem($px, $inherited: 16) {
+  @return ($px / $inherited) + em;
+}

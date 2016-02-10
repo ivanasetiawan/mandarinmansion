@@ -1,0 +1,50 @@
+body {
+  color: $color-primary;
+  font-family: $bodyFont;
+  font-size: 16px;
+  background: $color-bg;
+}
+
+.wrap {
+  max-width: $bp-xl;
+  margin: 0 auto;
+}
+
+.space-l-r {
+  padding: 0 $space-sm;
+  @media (min-width: $bp-lg) {
+    padding: 0 $space-lg;
+  }
+}
+
+a {
+  color: $color-green;
+  text-decoration: none;
+  position: relative;
+  &:before {
+    content: "";
+    padding: 0 5px;
+    position: absolute;
+    background: $color-green;
+    opacity: 0.3;
+    height: 2px;
+    bottom: 0;
+    left: -2px;
+    width: 100%;
+    transition: height 0.2s;
+  }
+  &:hover {
+    &:before {
+      height: 18px;
+    }
+  }
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  padding: 0;
+}
