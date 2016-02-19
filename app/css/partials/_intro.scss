@@ -1,3 +1,51 @@
 .introduction {
+  padding: rem(10) rem(20);
+  background: $color-primary url('../images/bg-intro.jpg') no-repeat;
+  background-size: cover;
+  color: $color-white;
+  position: relative;
+  a { color: $color-white; }
+  &__content {
+    z-index: 2;
+    position: relative;
+  }
+  &:before {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $color-primary;
+    opacity: 0.8;
+    content: '';
+    z-index: 1;
+  }
+  h2 { margin: 0 0 1rem; }
+  p { margin: 0; }
+  @media (min-width: $bp-md) {
+    .avatar {
+      position: absolute;
+      top: 50%;
+      left: 3rem;
+      margin-top: rem(-55);
+    }
+    &__content {
+      padding-left: rem(200);
+    }
+    h2 { font-size: rem(34); }
+    p {
+      font-size: rem(24);
+      line-height: 2.4rem;
+    }
+    padding: rem(40) rem(80);
+  }
+}
 
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: solid 2px $color-white;
+  img { max-width: 100%; }
 }
