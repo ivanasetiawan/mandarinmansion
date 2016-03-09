@@ -1,8 +1,12 @@
 body {
   color: $color-primary;
   font-family: $font-base;
-  font-size: 16px;
+  font-size: rem(16px);
   background: $color-bg;
+  padding: 0 rem(16px);
+  @media (min-width: $bp-lg) {
+    padding: 0 rem(24px);
+  }
 }
 
 .wrap {
@@ -20,6 +24,9 @@ body {
 a {
   color: $color-green;
   text-decoration: none;
+}
+
+nav a {
   position: relative;
   &:before {
     content: "";
