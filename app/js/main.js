@@ -1,2 +1,5 @@
 /* jshint devel:true */
-console.log('Look at app/js/main.js');
+$(document).ready(function() {
+  $('.carousel-shop').slick();
+  console.log('ssss');
+});
