@@ -44,7 +44,6 @@
     top: 20px;
     background: $color-white;
   }
-
   h2 {
     bottom: 0;
     left: 0;
@@ -80,9 +79,13 @@
     }
   }
 
+  @media (min-width: $bp-md) {
+    width: calc(100%/2);
+    float: left;
+    margin-bottom: rem(15px);
+  }
   @media (min-width: $bp-lg) {
     width: calc(100%/4);
-    float: left;
     margin-bottom: rem(30px);
   }
 }
