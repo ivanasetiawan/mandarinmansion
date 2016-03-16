@@ -97,3 +97,27 @@
 .slick-arrow.slick-hidden {
     display: none;
 }
+
+.slick-dots {
+  position: absolute;
+  z-index: 999;
+  bottom: rem(10px);
+  display: inline-block;
+  li {
+    list-style: none;
+    float: left;
+    margin: 0 rem(3px);
+  }
+  button {
+    background: $color-white;
+    border: 0;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    opacity: 0.6;
+    text-indent: -9999px;
+  }
+  .slick-active button {
+    opacity: 1;
+  }
+}

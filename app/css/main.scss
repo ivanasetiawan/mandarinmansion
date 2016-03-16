@@ -1,10 +1,11 @@
 @import "vendor/normalize";
-@import "vendor/slick";
 
 @import "base/vars";
 @import "base/functions";
 @import "base/grid";
 @import "base/layout";
+
+@import "vendor/slick";
 
 @import "partials/header";
 @import "partials/carousel";
@@ -13,3 +14,4 @@
 
 @import "partials/update";
 @import "partials/footer";
+
