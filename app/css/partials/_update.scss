@@ -1,10 +1,4 @@
-.update-widget {
-  overflow: hidden;
-  padding: 0 rem(15px);
-  @media (min-width: $bp-lg) {
-
-  }
-}
+.update-widget { overflow: hidden; }
 .update {
   header { background: none; }
   h2, h3 { font-weight: 400; }
