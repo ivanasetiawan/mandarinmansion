@@ -99,13 +99,15 @@
 }
 
 .slick-dots {
+  width: 100%;
+  text-align: center;
   position: absolute;
   z-index: 999;
   bottom: rem(10px);
   display: inline-block;
   li {
     list-style: none;
-    float: left;
+    display: inline-block;
     margin: 0 rem(3px);
   }
   button {
