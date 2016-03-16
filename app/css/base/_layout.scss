@@ -3,9 +3,9 @@ body {
   font-family: $font-base;
   font-size: rem(16px);
   background: $color-bg;
-  //padding: 0 rem(16px);
+  padding: 0 rem(16px);
   @media (min-width: $bp-lg) {
-    padding: 0 rem(16px);
+    padding: 0 rem(24px);
   }
 }
 
