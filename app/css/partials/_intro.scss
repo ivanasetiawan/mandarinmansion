@@ -1,14 +1,17 @@
 .introduction {
-  padding: rem(10px) rem(20px);
+  padding: rem(10px);
   background: $color-primary url('../images/bg-intro.jpg') no-repeat;
   background-size: cover;
   color: $color-white;
   position: relative;
+
   a { color: $color-white; }
+  
   &__content {
     z-index: 2;
     position: relative;
   }
+  
   &:before {
     position: absolute;
     width: 100%;
@@ -20,31 +23,59 @@
     content: '';
     z-index: 1;
   }
-  h2 { margin: 0 0 1rem; }
-  p { margin: 0; }
+  
+  h2 { 
+    font-size: rem(16px);
+    margin: 0 0 1rem; 
+  }
+  
+  p { 
+    font-size: rem(14px);
+    line-height: 1.2rem;
+    margin: 0; 
+  }
+
+  .avatar { display: none; }
+
   @media (min-width: $bp-md) {
+    padding: rem(20px);
+    
     .avatar {
+      width: 80px;
+      height: 80px;
       position: absolute;
+      display: block;
       top: 50%;
-      left: 3rem;
-      margin-top: rem(-55px);
-    }
-    &__content {
-      padding-left: rem(200px);
+      left: 0;
+      margin-top: rem(-42px);
     }
 
+    &__content { padding-left: rem(100px); }
+
+  }
+
+  @media (min-width: $bp-lg) {
+    padding: rem(40px) rem(80px);
+    
+    &__content { padding-left: rem(200px); }
+
     h2 { font-size: rem(34px); }
+
     p {
       font-size: rem(24px);
       line-height: 2.4rem;
     }
-    padding: rem(40px) rem(80px);
+
+    .avatar {
+      width: 110px;
+      height: 110px;
+      left: 3rem;
+      margin-top: rem(-55px);
+    }
   }
 }
 
 .avatar {
-  width: 110px;
-  height: 110px;
   border-radius: 50%;
   overflow: hidden;
   border: solid 2px $color-white;
