@@ -1,8 +1,11 @@
 .products {
   overflow: hidden;
-  padding: rem(30px) 0;
+  padding: rem(16px) 0;
   li {
     list-style-type: none;
+  }
+  @media (min-width: $bp-md) {
+    padding: rem(20px) 0;
   }
   @media (min-width: $bp-lg) {
     padding: rem(50px) 0 rem(30px);
@@ -79,10 +82,13 @@
       .product__img { opacity: 1; }
     }
   }
-
+  @media (min-width: $bp-md) {
+    width: calc(100%/3);
+    float: left;
+    margin-bottom: rem(20px);
+  }
   @media (min-width: $bp-lg) {
     width: calc(100%/4);
-    float: left;
     margin-bottom: rem(30px);
   }
 }
