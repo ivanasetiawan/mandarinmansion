@@ -2,8 +2,8 @@ footer {
   background: $color-white;
   overflow: hidden;
   font-size: rem(12px);
-  padding-bottom: rem(16px);
-  margin-top: rem(50px);
+  padding: 0 rem(10px) rem(10px) rem(10px);
+  margin-top: rem(20px);
   a { color: #808080; }
   li { margin-bottom: rem(5px); }
   ul {
@@ -12,13 +12,18 @@ footer {
     list-style-type: none;
   }
   h2 { font-weight: 400; }
-  @media (min-width: $bp-lg) {
+  
+  @media (min-width: $bp-md) {
     > div {
       padding: 0 rem(30px);
       box-sizing: border-box;
       width: calc(100%/3);
       float: left;
     }
+  }
+  @media (min-width: $bp-lg) {
+    margin-top: rem(50px);
+    padding-bottom: rem(16px);
   }
 
 }
