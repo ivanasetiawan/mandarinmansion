@@ -7,10 +7,11 @@
 @import "vendor/slick";
 
 @import "partials/header";
-@import "partials/carousel";
-@import "partials/intro";
-@import "partials/products";
-
-@import "partials/update";
 @import "partials/footer";
 
+@import "partials/home/carousel";
+@import "partials/home/intro";
+@import "partials/home/products";
+@import "partials/home/update";
+
+@import "partials/about/about";

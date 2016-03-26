@@ -1,11 +1,11 @@
 footer {
   background: $color-white;
   overflow: hidden;
-  font-size: rem(12px);
-  padding: 0 rem(10px) rem(10px) rem(10px);
-  margin-top: rem(20px);
+  font-size: isEm(12px);
+  padding: 0 isEm(10px) isEm(10px) isEm(10px);
+  margin-top: isEm(20px);
   a { color: #808080; }
-  li { margin-bottom: rem(5px); }
+  li { margin-bottom: isEm(5px); }
   ul {
     margin: 0;
     padding: 0;
@@ -15,15 +15,15 @@ footer {
   
   @media (min-width: $bp-md) {
     > div {
-      padding: 0 rem(30px);
+      padding: 0 isEm(30px);
       box-sizing: border-box;
       width: calc(100%/3);
       float: left;
     }
   }
   @media (min-width: $bp-lg) {
-    margin-top: rem(50px);
-    padding-bottom: rem(16px);
+    margin-top: isEm(50px);
+    padding-bottom: isEm(16px);
   }
 
 }

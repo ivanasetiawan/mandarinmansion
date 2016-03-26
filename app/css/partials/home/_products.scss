@@ -1,21 +1,21 @@
 .products {
   overflow: hidden;
-  padding: rem(16px) 0;
+  padding: isEm(16px) 0;
   li {
     list-style-type: none;
   }
   @media (min-width: $bp-md) {
-    padding: rem(20px) 0;
+    padding: isEm(20px) 0;
   }
   @media (min-width: $bp-lg) {
-    padding: rem(50px) 0 rem(30px);
+    padding: isEm(50px) 0 isEm(30px);
   }
 }
 
 .product {
   
   box-sizing: border-box;
-  margin-bottom: rem(16px);
+  margin-bottom: isEm(16px);
   h2 { margin: 0; }
   a {
     position: relative;
@@ -86,10 +86,10 @@
     padding: 0 15px;
     width: calc(100%/3);
     float: left;
-    margin-bottom: rem(20px);
+    margin-bottom: isEm(20px);
   }
   @media (min-width: $bp-lg) {
     width: calc(100%/4);
-    margin-bottom: rem(30px);
+    margin-bottom: isEm(30px);
   }
 }

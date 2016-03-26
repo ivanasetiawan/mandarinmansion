@@ -1,0 +1,80 @@
+.title-has-line,
+%title-has-line {
+	text-transform: uppercase;
+	position: relative;
+	padding-bottom: 10px;
+	display: inline-block;
+	&:after {
+		content: '';
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 45%;
+		height: 3px;
+		background: $color-grey-light;
+	}
+}
+
+blockquote {
+	em {
+		font-family: $font-serif;
+		line-height: 1.4;
+	}
+	@media (min-width: $bp-md) {
+		em {
+			font-size: isEm(24px);
+		}
+	}
+}
+
+.about-header {
+	img { max-width: 100%;}
+	@media (min-width: $bp-md) {
+		height: 320px;
+		position: relative;
+		
+		&:before {
+			content: '';
+			display: block;
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			z-index: 2;
+			background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.65), transparent);
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+		
+	}
+}
+
+.about-intro {
+	@media (min-width: $bp-md) {
+		position: absolute;
+		left: isEm(20px);
+		bottom: isEm(20px);
+		color: $color-white;
+		max-width: 60%;
+		z-index: 3;
+		
+		h1 { @extend %title-has-line; }
+	}
+}
+
+.about-author {
+	h1 { @extend %title-has-line; }
+	@media (min-width: $bp-md) {
+		padding: isEm(30px) isEm(20px);
+		margin-bottom: isEm(20px);
+		background: $color-white;
+		p, h1, h2 {
+			max-width: $bp-md;
+			margin: 0 auto isEm(16px);
+		}
+	}
+}

@@ -1,12 +1,17 @@
 body {
   color: $color-primary;
   font-family: $font-base;
-  font-size: rem(16px);
+  font-size: isEm(16px);
   background: $color-bg;
-  padding: 0 rem(16px);
+  padding: 0 isEm(16px);
   @media (min-width: $bp-lg) {
-    padding: 0 rem(24px);
+    padding: 0 isEm(24px);
   }
+}
+
+p {
+  font-size: isEm(14px);
+  line-height: 1.7;
 }
 
 .wrap {
@@ -54,7 +59,7 @@ nav a {
 
 .link-arrow {
   position: relative;
-  padding-right: rem(20px);
+  padding-right: isEm(20px);
   display: inline-block;
   transition: color 0.2s;
   &:after {
@@ -63,7 +68,7 @@ nav a {
     position: absolute;
     right: 0;
     top: -5px;
-    font-size: rem(20px);
+    font-size: isEm(20px);
   }
   &:hover {
     color: $color-green-light;

@@ -9,7 +9,7 @@ header {
 
 .mandarin-mansion {
   display: inline-block;
-  font-size: rem(20px);
+  font-size: isEm(20px);
   small {
     display: block;
     opacity: 0.6;
@@ -34,7 +34,7 @@ header {
     }
   }
   @media (min-width: $bp-md) {
-    font-size: rem(32px);
+    font-size: isEm(32px);
   }
 }
 
@@ -45,7 +45,7 @@ nav {
       &:before { opacity: 0.3;}
     }
   }
-  font-size: rem(14px);
+  font-size: isEm(14px);
   padding-bottom: 16px;
   ul
   li {
@@ -54,9 +54,9 @@ nav {
     padding: 0 5px;
   }
   @media (min-width: $bp-md) {
-    font-size: rem(16px);
+    font-size: isEm(16px);
     float: right;
-    margin-top: rem(33px);
+    margin-top: isEm(33px);
     padding-bottom: 0;
   }
 }

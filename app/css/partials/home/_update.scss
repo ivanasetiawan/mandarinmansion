@@ -2,18 +2,14 @@
 .update {
   header { background: none; }
   h2, h3 { font-weight: 400; }
-  h3 { margin-bottom: rem(5px); }
-  small { font-size: rem(14px); }
-  p {
-    font-size: rem(14px);
-    line-height: rem(24px);
-  }
+  h3 { margin-bottom: isEm(5px); }
+  small { font-size: isEm(14px); }
   @media (min-width: $bp-lg) {
     width: 70%;
     float: left;
-    h3 { font-size: rem(24px); }
-    h2 { font-size: rem(34px); }
-    small { font-size: rem(16px); }
+    h3 { font-size: isEm(24px); }
+    h2 { font-size: isEm(34px); }
+    small { font-size: isEm(16px); }
   }
 }
 
