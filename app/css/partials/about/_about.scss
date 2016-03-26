@@ -9,14 +9,19 @@
 		position: absolute;
 		left: 0;
 		bottom: 0;
-		width: 45%;
+		width: 100%;
 		height: 3px;
 		background: $color-grey-light;
+	}
+	@media (min-width: $bp-md) {
+		&:after { width: 45%; }
 	}
 }
 
 blockquote {
+	margin: isEm(16px) 0;
 	em {
+		font-size: isEm(22px);
 		font-family: $font-serif;
 		line-height: 1.4;
 	}
@@ -28,7 +33,7 @@ blockquote {
 }
 
 .about-header {
-	img { max-width: 100%;}
+	img { max-width: 100%; vertical-align: top; }
 	@media (min-width: $bp-md) {
 		height: 320px;
 		position: relative;
@@ -54,6 +59,7 @@ blockquote {
 }
 
 .about-intro {
+	padding: 0 isEm(20px) 1px;
 	@media (min-width: $bp-md) {
 		position: absolute;
 		left: isEm(20px);
@@ -61,6 +67,7 @@ blockquote {
 		color: $color-white;
 		max-width: 60%;
 		z-index: 3;
+		padding: 0;
 		
 		h1 { @extend %title-has-line; }
 	}
