@@ -1,15 +1,8 @@
 .update-widget { overflow: hidden; }
-.update {
-  header { background: none; }
-  h2, h3 { font-weight: 400; }
-  h3 { margin-bottom: isEm(5px); }
-  small { font-size: isEm(14px); }
+.update-content {
   @media (min-width: $bp-lg) {
     width: 70%;
     float: left;
-    h3 { font-size: isEm(24px); }
-    h2 { font-size: isEm(34px); }
-    small { font-size: isEm(16px); }
   }
 }
 

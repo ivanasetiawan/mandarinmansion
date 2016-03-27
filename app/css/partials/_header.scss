@@ -85,6 +85,8 @@ nav {
   transition: all 0.2s;
   @media (min-width: $bp-md) {
     position: fixed;
+    width: 100%;
+    left: 0;
     top: 0;
     z-index: 9999;
     background: $color-white;
