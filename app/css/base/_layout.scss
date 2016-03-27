@@ -19,7 +19,8 @@ p {
   margin: 0 auto;
 }
 
-.space-l-r {
+.space-l-r,
+%space-l-r {
   padding: 0 $space-sm;
   @media (min-width: $bp-lg) {
     padding: 0 $space-lg;
@@ -33,21 +34,24 @@ a {
 
 nav a {
   position: relative;
+  padding: 0 5px;
   &:before {
     content: "";
-    padding: 0 5px;
     position: absolute;
     background: $color-green;
     opacity: 0.3;
     height: 2px;
     bottom: 0;
-    left: -2px;
+    left: 0;
     width: 100%;
     transition: height 0.2s;
   }
-  &:hover {
+
+  &:hover,
+  &.is-current {
     &:before {
       height: 18px;
+      opacity: 0.3;
     }
   }
 }

@@ -67,3 +67,34 @@ nav {
     padding-bottom: 0;
   }
 }
+
+.mainheader {
+  @media (min-width: $bp-md) {
+    &.has-sticky {
+      height: 88px;
+    }
+  }
+}
+
+.header-nav {
+  @extend %space-l-r;
+  box-sizing: border-box;
+}
+
+.is-sticky {
+  transition: all 0.2s;
+  @media (min-width: $bp-md) {
+    position: fixed;
+    top: 0;
+    z-index: 9999;
+    background: $color-white;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+
+    .mandarin-mansion { font-size: isEm(20px); }
+
+    nav { 
+      margin-top: isEm(25px); 
+      margin-left: isEm(20px);
+    }
+  }
+}
