@@ -26,8 +26,23 @@ blockquote {
 		line-height: 1.4;
 	}
 	@media (min-width: $bp-md) {
+		margin: isEm(24px) isEm(30px);
 		em {
+			padding-left: isEm(20px);
+			display: block;
 			font-size: isEm(24px);
+			position: relative;
+
+			&:before {
+				content: '';
+				display: block;
+				width: 5px;
+				height: 100%;
+				position: absolute;
+				top: 0;
+				left: 0;
+				background: $color-green-light;
+			}
 		}
 	}
 }

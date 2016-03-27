@@ -10,6 +10,13 @@ header {
 .mandarin-mansion {
   display: inline-block;
   font-size: isEm(20px);
+  a { 
+    color: $color-primary; 
+    transition: opacity 0.2s;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
   small {
     display: block;
     opacity: 0.6;
