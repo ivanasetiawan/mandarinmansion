@@ -7,6 +7,15 @@ header {
   }
 }
 
+.mandarin-mansion-logo {
+  display: inline-block;
+  img {
+    height: 60px;
+    vertical-align: middle;
+  }
+  .logo-mobile { display: none; }
+}
+
 .mandarin-mansion {
   display: inline-block;
   font-size: isEm(20px);
@@ -93,6 +102,14 @@ nav {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 
     .mandarin-mansion { font-size: isEm(20px); }
+    
+    .mandarin-mansion-logo {
+      .logo-desktop { display: none; }
+      .logo-mobile { 
+        display: inline-block; 
+        height: 40px;
+      }
+    }
 
     nav { 
       margin-top: isEm(25px); 

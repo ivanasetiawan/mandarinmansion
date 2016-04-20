@@ -27,14 +27,16 @@
 		a { color: $color-primary; transition: color 0.2s;
 			&:hover { color: $color-green; }
 		}
+		padding: 1px isEm(14px);
 		@media (min-width: $bp-md) {
-			padding: 0 isEm(14px);
+			padding: 0 isEm(20px);
 		}
 	}
 
 	&__thumb {
-		display: block;
+		display: none;
 		@media (min-width: $bp-md) {
+			display: block;
 			padding-bottom: 50%;
 			height: 0;
 			width: 50%;
