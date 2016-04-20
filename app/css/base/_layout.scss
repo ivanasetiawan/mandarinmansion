@@ -2,6 +2,7 @@ body {
   color: $color-primary;
   font-family: $font-base;
   font-size: isEm(16px);
+  font-weight: 300;
   background: $color-bg;
   padding: 0 isEm(16px);
   @media (min-width: $bp-lg) {

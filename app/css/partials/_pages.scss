@@ -1,5 +1,9 @@
 .page-header {
-	img { max-width: 100%; vertical-align: top; }
+	img { 
+		//max-width: 100%; 
+		vertical-align: top;
+		height: 100%;
+	}
 	@media (min-width: $bp-md) {
 		height: 320px;
 		position: relative;
