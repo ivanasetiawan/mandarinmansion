@@ -1,12 +1,17 @@
 .page-header {
 	img { 
-		//max-width: 100%; 
+		max-width: 100%; 
 		vertical-align: top;
-		height: 100%;
 	}
+
 	@media (min-width: $bp-md) {
 		height: 320px;
 		position: relative;
+		overflow: hidden;
+
+		img {
+			height: 100%;
+		}
 		
 		&:before {
 			content: '';
@@ -30,9 +35,13 @@
 
 .page-intro {
 	padding: 0 isEm(20px) 1px;
-	a { color: $color-white; text-decoration: underline; transition: opacity 0.2s;
+
+	a { 
+		text-decoration: underline; 
+		transition: opacity 0.2s;
 		&:hover { opacity: 0.8; }
 	}
+
 	@media (min-width: $bp-md) {
 		position: absolute;
 		left: isEm(20px);
@@ -41,6 +50,10 @@
 		max-width: 60%;
 		z-index: 3;
 		padding: 0;
+
+		a {
+			color: $color-white;
+		}
 		
 		h1 { @extend %title-has-line; }
 	}

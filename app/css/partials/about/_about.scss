@@ -1,10 +1,8 @@
 .title-has-line,
 %title-has-line {
-	text-transform: uppercase;
 	position: relative;
 	padding-bottom: 10px;
 	display: inline-block;
-	font-family: $font-montserrat;
 	&:after {
 		content: '';
 		position: absolute;
@@ -27,7 +25,7 @@ blockquote {
 		line-height: 1.4;
 	}
 	@media (min-width: $bp-md) {
-		margin: isEm(24px) isEm(30px);
+		margin: isEm(32px) isEm(120px);
 		em {
 			padding-left: isEm(20px);
 			display: block;
