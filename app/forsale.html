@@ -1,139 +1,219 @@
 <!doctype html>
 <html class="no-js" lang="">
 	<head>
-	<meta charset="utf-8">
-	<meta name="description" content="">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Mandarin Mansion</title>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Mandarin Mansion</title>
+		
+		<!-- Place favicon.ico in the root directory -->
+		<link rel="shortcut icon" href="http://www.mandarinmansion.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
+		<link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
 
-	<!-- Place favicon.ico in the root directory -->
-	<link rel="shortcut icon" href="http://www.mandarinmansion.com/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon">
-	<link href='https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,300italic,300' rel='stylesheet' type='text/css'>
-	
-	<!-- build:css css/vendor.css -->
-	<!-- bower:css -->
-	<!-- endbower -->
-	<!-- endbuild -->
-
-
-	<!-- build:css css/main.css -->
-	<link rel="stylesheet" href="css/main.css">
-	<!-- endbuild -->
+		<!-- build:css css/vendor.css -->
+		<!-- bower:css -->
+		<!-- endbower -->
+		<!-- endbuild -->
 
 
-	<!-- build:js js/vendor/modernizr.js -->
-	<script src="/bower_components/modernizr/modernizr.js"></script>
-	<!-- endbuild -->
+		<!-- build:css css/main.css -->
+		<link rel="stylesheet" href="css/main.css">
+		<!-- endbuild -->
+
+
+		<!-- build:js js/vendor/modernizr.js -->
+		<script src="/bower_components/modernizr/modernizr.js"></script>
+		<!-- endbuild -->
 
 	</head>
 	<body>
-	<!--[if lt IE 10]>
-		<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-	<![endif]-->
+		<!--[if lt IE 10]>
+			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
 
-	<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-	<script>
-		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-		e.src='//www.google-analytics.com/analytics.js';
-		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-		ga('create','UA-XXXXX-X');ga('send','pageview');
-	</script>
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<script>
+			(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+			function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+			e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+			e.src='//www.google-analytics.com/analytics.js';
+			r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+			ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script>
 
 
-	<!-- build:js js/vendor.js -->
-	<!-- bower:js -->
-	<!-- endbower -->
-	<!-- endbuild -->
-	<div class="wrap">
-		<header class="mainheader">
-			<div class="header-nav" data-header-sticky>
-				<h1 class="mandarin-mansion-logo">
-					<a href="/">
-						<img class="logo-desktop" src="../images/logo-mm.svg" alt="Mandarin Mansion - antique arms &amp; armor">
-						<img class="logo-mobile" src="../images/logo-mm-sm.svg" alt="Mandarin Mansion - antique arms &amp; armor">
-					</a>
-				</h1>
-				<nav>
+		<!-- build:js js/vendor.js -->
+		<!-- bower:js -->
+		<!-- endbower -->
+		<!-- endbuild -->
+		<div class="wrap">
+			<header class="mainheader">
+				<div class="header-nav" data-header-sticky>
+					<h1 class="mandarin-mansion-logo">
+						<a href="/">
+							<img class="logo-desktop" src="../images/logo-mm.svg" alt="Mandarin Mansion - antique arms &amp; armor">
+							<img class="logo-mobile" src="../images/logo-mm-sm.svg" alt="Mandarin Mansion - antique arms &amp; armor">
+						</a>
+					</h1>
+					<nav>
+						<ul>
+						<li><a href="/forsale.html" class="is-current">For Sale</a></li>
+						<li><a href="/services.html">Services</a></li>
+						<li><a href="/showcase.html">Showcase</a></li>
+						<li><a href="/articles.html">Articles</a></li>
+						<li><a href="/about.html">About</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<main>
+				<header class="page-header">
+					<img src="images/header-about.jpg" alt="About Mandarin Mansion">
+					<div class="page-intro">
+						<h1>For Sale</h1>
+						<p>On this page you could find our for sale products. Below is a tab functionality to choose: </p>
+					</div>
+				</header>
+
+				<article class="products">
+					<div data-filter-products>
+						<select>
+							<option>
+								Himalayan Kingdom
+							</option>
+							<option>
+								Islamic world
+							</option>
+							<option>Japanese</option>
+							<option>Chinese</option>
+							<option>Vietnamese</option>
+							<option>Indian Subcontinent</option>
+						</select>	
+					</div>
+
 					<ul>
-					<li><a href="/forsale.html">For Sale</a></li>
-					<li><a href="/services.html" class="is-current">Services</a></li>
-					<li><a href="/showcase.html">Showcase</a></li>
-					<li><a href="/articles.html">Articles</a></li>
-					<li><a href="/about.html">About</a></li>
+						<li class="product">
+							<a href="">
+								<h2>A hefty nieuwdao</h2>
+								<span class="product__pricetag">&euro; 2200</span>
+								<div class="product__img">
+									<img src="images/product1.jpg" alt="product 1">
+								</div>
+							</a>
+						</li>
+						<li class="product">
+							<a href="">
+								<h2>A hefty nieuwdao</h2>
+								<span class="product__pricetag">&euro; 2700</span>
+								<div class="product__img">
+									<img src="images/product2.jpg" alt="product 2">
+								</div>
+							</a>
+						</li>
+						<li class="product product--reserved">
+							<a href="">
+								<h2>A hefty nieuwdao</h2>
+								<span class="product__pricetag">Reserved</span>
+								<div class="product__img">
+									<img src="images/product3.jpg" alt="product 3">
+								</div>
+							</a>
+						</li>
+						<li class="product product--sold">
+							<a href="">
+								<h2>A hefty nieuwdao</h2>
+								<span class="product__pricetag">Sold</span>
+								<div class="product__img">
+									<img src="images/product3.jpg" alt="product 3">
+								</div>
+							</a>
+						</li>
+						<li class="product product--reserved">
+							<a href="">
+								<h2>A hefty nieuwdao</h2>
+								<span class="product__pricetag">Reserved</span>
+								<div class="product__img">
+									<img src="images/product3.jpg" alt="product 3">
+								</div>
+							</a>
+						</li>
+						<li class="product">
+							<a href="">
+								<h2>A hefty nieuwdao</h2>
+								<span class="product__pricetag">&euro; 2200</span>
+								<div class="product__img">
+									<img src="images/product1.jpg" alt="product 1">
+								</div>
+							</a>
+						</li>
+						<li class="product">
+							<a href="">
+								<h2>A hefty nieuwdao</h2>
+								<span class="product__pricetag">&euro; 2700</span>
+								<div class="product__img">
+									<img src="images/product2.jpg" alt="product 2">
+								</div>
+							</a>
+						</li>
+						<li class="product product--reserved">
+							<a href="">
+								<h2>A hefty nieuwdao</h2>
+								<span class="product__pricetag">Reserved</span>
+								<div class="product__img">
+									<img src="images/product4.jpg" alt="product 4">
+								</div>
+							</a>
+						</li>
 					</ul>
-				</nav>
-			</div>
-		</header>
+				</article>
+			</main>
 
-		<main>
-		<header class="page-header">
-		<img src="images/header-about.jpg" alt="About Mandarin Mansion">
-			<div class="page-intro">
-				<h1>About</h1>
-				<p>Founded in 2006 by Peter Dekker, Mandarin Mansion buys, sells, restores and advises about various antique arms and related objects. We are specialised in antique Chinese swords, Asian composite bows, and antique arms and armor of the Qing dynasty. We also do appraisals.</p>
-			</div>
-		</header>
+			<footer>
+				<div>
+					<h2>Links</h2>
+					<ul>
+						<li><a href="">www.runjeetsingh.com</a></li>
+						<li><a href="">www.runjeetsingh.com</a></li>
+						<li><a href="">www.runjeetsingh.com</a></li>
+						<li><a href="">www.runjeetsingh.com</a></li>
+						<li><a href="">www.runjeetsingh.com</a></li>
+						<li><a href="">www.runjeetsingh.com</a></li>
+					</ul>
+				</div>
 
-		<article class="article-base">
-			<h1>Peter Dekker</h1>
-			<div class="article-content">
-				<p>Fascinated by the military of the Manchu-ruled Qing dynasty, his studies have emphasized on Qing military weapons; edged weapons, archery equipment and rattan shields. He believes in a practical approach that combines researching period accounts, texts and artwork with the study of antique artifacts and gaining practical experience by reproducing, testing and using such gear. As an archer Peter is researching and reconstructing the Manchu style, a practical military style of archery that was introduced into China during the founding of the Qing dynasty. He wrote several <a href="">articles</a> on the subject and presented workshops and lectures on archery <a href="">events</a> around the world.</p>
+				<div>
+					<h2>Contact (EU)</h2>
+					<ul>
+						<li>- Items for sale on this site</li>
+						<li>- Grip wrapping</li>
+						<li>- Consignment Europe</li>
+						<li class="contact-person">
+							<span>Peter Dekker</span>
+							<a href="">peter@mandarinmansion.com</a>
+						</li>
+					</ul>
+				</div>
 
-				<p>Among the skills Peter picked up on the side are reproducing tengpai, traditional Chinese rattan shields, arrow making, arrow restoration, light restorations on antique weapons. He may mastered various methods of grip wrapping for Chinese hilted weapons. Peter's wraps are appreciated by martial artists, professional restorers and antique collectors for both their looks and durability.</p>
+				<div>
+					<h2>Contact (US)</h2>
+					<ul>
+						<li>- Restoration services</li>
+						<li>- Consignment United States</li>
+						<li class="contact-person">
+							<span>Philip Tom</span>
+							<a href="">pcalvus@gmail.com</a>
+						</li>
+					</ul>
+				</div>
 
-				<p>For grip grapping turorial and services, see our grip wrapping page.  For Peter's passion, Manchu archery, see: <a href="">www.manchuarchery.org</a></p>
-				<p>Contact Peter directly at <a href="">peter@mandarinmansion.com </a></p>
-			</div>
-		</article>
-		</main>
-
-		<footer>
-		<div>
-			<h2>Links</h2>
-			<ul>
-			<li><a href="">www.runjeetsingh.com</a></li>
-			<li><a href="">www.runjeetsingh.com</a></li>
-			<li><a href="">www.runjeetsingh.com</a></li>
-			<li><a href="">www.runjeetsingh.com</a></li>
-			<li><a href="">www.runjeetsingh.com</a></li>
-			<li><a href="">www.runjeetsingh.com</a></li>
-			</ul>
+				<p class="copyright">Copyright Peter Dekker and Philip Tom, 2006 - 1026, all rights reserved.</p>
+			</footer>
 		</div>
-
-		<div>
-			<h2>Contact (EU)</h2>
-			<ul>
-			<li>- Items for sale on this site</li>
-			<li>- Grip wrapping</li>
-			<li>- Consignment Europe</li>
-			<li class="contact-person">
-				<span>Peter Dekker</span>
-				<a href="">peter@mandarinmansion.com</a>
-			</li>
-			</ul>
-		</div>
-
-		<div>
-			<h2>Contact (US)</h2>
-			<ul>
-			<li>- Restoration services</li>
-			<li>- Consignment United States</li>
-			<li class="contact-person">
-				<span>Philip Tom</span>
-				<a href="">pcalvus@gmail.com</a>
-			</li>
-			</ul>
-		</div>
-
-		<p class="copyright">Copyright Peter Dekker and Philip Tom, 2006 - 1026, all rights reserved.</p>
-		</footer>
-	</div>
-	<!-- build:js js/vendor/*.js -->
-	<script src="/bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
-	<script src="js/main.js"></script>
-	<!-- endbuild -->
+		<!-- build:js js/vendor/*.js -->
+		<script src="/bower_components/jquery/dist/jquery.min.js"></script>
+		<script src="/bower_components/slick-carousel/slick/slick.min.js"></script>
+		<script src="js/main.js"></script>
+		<!-- endbuild -->
 	</body>
 </html>
