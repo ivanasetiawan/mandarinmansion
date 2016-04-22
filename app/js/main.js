@@ -10,6 +10,7 @@ $(document).ready(function() {
     cssEase: 'linear'
   });
 
+  // Sticky header
   var STICKY_HEADER = $('[data-header-sticky]');
   var STICKY_HEADER_HEIGHT = STICKY_HEADER.outerHeight();
 
@@ -27,4 +28,23 @@ $(document).ready(function() {
 		});
   }
 	
+  // Tabs
+  var MENU_TABS = $('[data-menu-tabs]');
+  var MENU_TARGETS = $('[data-menu-tabs-target]');
+
+  if (MENU_TABS.length) {
+    MENU_TABS.find('a').each(function() {
+      $(this).on('click', function(event) {
+        event.preventDefault();
+        MENU_TARGETS.removeClass('is-active');
+        MENU_TABS.find('a').removeClass('is-active');
+        
+        $(this).addClass('is-active');
+        var targetElID = $(this).attr('href');
+        $(targetElID).addClass('is-active');
+      });
+    });
+  }
+
 });
+

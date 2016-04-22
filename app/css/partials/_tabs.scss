@@ -1,0 +1,37 @@
+.menu-tabs {
+	@media (min-width: $bp-md) {
+		position: absolute;
+		z-index: 2;
+		bottom: 0;
+		left: 0;
+
+		li { 
+			float: left; 
+			@extend %normalize-lists;
+			margin-left: isEm(10px);
+		}
+
+		a { 
+			display: block; 
+			background: $color-white;
+			padding: isEm(10px);
+			opacity: 0.8;
+			transition: opacity 0.2s;
+			color: $color-primary;
+			cursor: hand;
+
+			&:hover,
+			&.is-active {
+				opacity: 1;
+			}
+		} 
+	}
+}
+
+.tabs-target {
+	display: none;
+}
+
+.is-active {
+	display: block;
+}

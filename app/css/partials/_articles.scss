@@ -3,6 +3,7 @@
   h1, h2, h3 { font-weight: 400; }
   h1, h3 { margin-bottom: isEm(5px); }
   small { font-size: isEm(14px); }
+  p { @extend %p; }
   @media (min-width: $bp-md) {
     h1, h3 { font-size: isEm(24px); }
     h2 { font-size: isEm(34px); }

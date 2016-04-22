@@ -2,3 +2,9 @@
 @function isEm($target, $base:16px) {
   @return ($target / $base) + em;
 }
+
+%normalize-lists {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}

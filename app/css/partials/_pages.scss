@@ -20,6 +20,8 @@
 			height: 100%;
 			position: absolute;
 			z-index: 2;
+			background: rgba(0,0,0, 0.5);
+			background: -moz-linear-gradient(bottom, rgba(0, 0, 0, 0.65), transparent);
 			background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, 0.65), transparent);
 		}
 
@@ -45,7 +47,7 @@
 	@media (min-width: $bp-md) {
 		position: absolute;
 		left: isEm(20px);
-		bottom: isEm(20px);
+		bottom: isEm(50px);
 		color: $color-white;
 		max-width: 60%;
 		z-index: 3;

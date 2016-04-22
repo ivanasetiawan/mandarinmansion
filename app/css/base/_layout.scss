@@ -5,12 +5,13 @@ body {
   font-weight: 300;
   background: $color-bg;
   padding: 0 isEm(16px);
+  line-height: 1.5;
   @media (min-width: $bp-lg) {
     padding: 0 isEm(24px);
   }
 }
 
-p {
+%p {
   font-size: isEm(14px);
   line-height: 1.7;
 }
@@ -31,7 +32,6 @@ p {
 a {
   color: $color-green;
   text-decoration: none;
-  cursor: pointer;
 }
 
 nav a {
@@ -84,6 +84,7 @@ nav a {
 ul {
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 li {
